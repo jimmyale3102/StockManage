@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="#{login.EditUsuariosTitle}"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+                <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+                <h:panelGrid columns="2">
+                    <h:outputLabel value="#{login.EditUsuariosLabel_idUsuario}" for="idUsuario" />
+                    <h:inputText id="idUsuario" value="#{usuariosController.selected.idUsuario}" title="#{login.EditUsuariosTitle_idUsuario}" required="true" requiredMessage="#{login.EditUsuariosRequiredMessage_idUsuario}"/>
+                    <h:outputLabel value="#{login.EditUsuariosLabel_userName}" for="userName" />
+                    <h:inputText id="userName" value="#{usuariosController.selected.userName}" title="#{login.EditUsuariosTitle_userName}" required="true" requiredMessage="#{login.EditUsuariosRequiredMessage_userName}"/>
+                    <h:outputLabel value="#{login.EditUsuariosLabel_password}" for="password" />
+                    <h:inputText id="password" value="#{usuariosController.selected.password}" title="#{login.EditUsuariosTitle_password}" required="true" requiredMessage="#{login.EditUsuariosRequiredMessage_password}"/>
+                    <h:outputLabel value="#{login.EditUsuariosLabel_idCargo}" for="idCargo" />
+                    <h:inputText id="idCargo" value="#{usuariosController.selected.idCargo}" title="#{login.EditUsuariosTitle_idCargo}" required="true" requiredMessage="#{login.EditUsuariosRequiredMessage_idCargo}"/>
+                </h:panelGrid>
+                <h:commandLink action="#{usuariosController.update}" value="#{login.EditUsuariosSaveLink}"/>
+                <br />
+                <br />
+                <h:link outcome="View" value="#{login.EditUsuariosViewLink}"/>
+                <br />
+                <h:commandLink action="#{usuariosController.prepareList}" value="#{login.EditUsuariosShowAllLink}" immediate="true"/>
+                <br />
+                <br />
+                <h:link outcome="/index" value="#{login.EditUsuariosIndexLink}" />
+            </h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

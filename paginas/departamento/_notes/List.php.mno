@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_dep" value="name:departamento_id;datatype:int,name:nombre_departamento;datatype:string" />
+</info>

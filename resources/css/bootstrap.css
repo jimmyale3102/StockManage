@@ -1,0 +1,58 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 16/06/2018, 10:09:36 AM
+    Author     : Hugo
+*/
+.form{
+    display: none;
+}
+
+/*Estilos header inicio de sesion*/
+.hsesion{
+    background: #EEEE03;
+    padding: 2em;
+    text-align: center;
+}
+
+/*Estilos de formulario de inicio de sesión*/
+.titulo{
+    font-size: 20pt;
+    font-weight:700;
+    font-family:'Open Sans','Helvetica Neue',Arial,sans-serif;
+    text-align: center;
+}
+.sesion-cont{
+    font-size: 13pt;
+    font-weight:700;
+    font-family:'Open Sans','Helvetica Neue',Arial,sans-serif;
+    text-align:justify;
+    padding: 2em;
+    margin-top: 5em;
+    background: #EEEEEE;
+    border-radius: 25px;
+    border: 1px solid black;
+}
+
+.olvide{
+    font-size: 9pt;
+    font-family:'Open Sans','Helvetica Neue',Arial,sans-serif;
+    text-align:right;
+}
+
+/*Estilos footer inicio de sesion*/
+
+.text-footer{
+    text-align: center;
+    font-size: 9pt;
+    color: white;
+}
+.text-font{
+    text-align: justify;
+    font-size: 12pt;
+    color: black;
+    font-family:'Open Sans','Helvetica Neue',Arial,sans-serif
+}

@@ -1,0 +1,13 @@
+@media (max-width: 480px){
+    
+    .ocultar{
+        display: inherit !important;
+    }
+
+    nav.small, nav#sidebar{
+        display: none;
+    }
+
+    /*Hasta aquí va el diseño del administrador*/
+
+}

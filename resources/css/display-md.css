@@ -1,0 +1,31 @@
+@media(min-width: 481px) and (max-width: 980px){
+	
+ #sidebar {     /*Diseño de barra lateral para tablets*/
+        min-width: 95px;
+        max-width: 95px;
+        background: #ffc107;
+        min-height: 100vh;
+        transition: all 0.3s;
+        text-align: center;
+    }
+
+    #sidebar.active {
+        margin-left: 0 !important;
+    }
+
+    div a span{
+    	display: block;
+    }
+
+    div a i#cerrar{
+        font-size: 1.8em;
+        
+    }
+     .wrapper { /*tamaño de contenido*/
+        display: flex;
+        width: 100%;
+        align-items: stretch;
+    }
+    
+	/*Hasta aqui va el diseño del administrador*/
+}

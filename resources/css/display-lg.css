@@ -1,0 +1,19 @@
+@media(min-width: 981px){
+	
+     .wrapper { /*distribución del contenido que se va a ver cuando se seleccione una opcion*/
+        display: flex;
+        width: 100%;
+        align-items: stretch;
+    }
+
+
+
+	#sidebar.active {  /*Como se va a ver la barra cuando este contraida*/
+    	min-width: 95px;
+    	max-width: 95px;
+    	text-align: center;
+	}
+
+    /*Hasta aquí va la el diseño del administrador*/
+
+}

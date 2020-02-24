@@ -1,0 +1,270 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 16/06/2018, 10:09:36 AM
+    Author     : Hugo, Karem, Jimmy
+*/
+html{
+    font-family:'Open Sans','Helvetica Neue',Arial,sans-serif;
+}
+
+.background-page{
+    background-image: url('/ProyectoBases2/resources/images/LogoSinFondo.png');
+    background-repeat:no-repeat; 
+    background-position: center;
+    background-size: 500px 500px;   
+}
+
+.position{
+    width: 60%;
+    margin-left: 20%;
+}
+
+a,
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+/*Estilos header inicio de sesion*/
+.hsesion{
+    background: #ffa000;
+    padding: 2em;
+    text-align: center;
+}
+
+/*Estilos de formulario de inicio de sesión*/
+.titulo{
+    font-size: 20pt;
+    font-weight:700;
+    text-align: center;
+}
+.sesion-cont{
+    font-size: 13pt;
+    font-weight:700;
+    text-align:justify;
+    padding: 2em;
+    margin-top: 5em;
+    background: #EEEEEE;
+    border-radius: 25px;
+    border: 1px solid black;
+}
+
+
+.btn {      /*Diseño de botones*/
+  font-weight: 500;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 90px;
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  margin-left: 1%;
+}
+
+.btn-ambar{
+    background: #ffc107;
+    color: #000000;
+}
+
+.btn-ambar-dark{
+    background: #ffa000;
+    color: #000000;
+}
+
+.ocultar{
+    display: none;
+}
+
+/*Diseño de Forms*/
+
+.formCreate{
+    padding-top: 5%;
+    align-content: center;
+}
+
+.titleCreate{
+    width: 100%;
+}
+/*.dropdown-item{
+    text-align: center;
+    opacity: 1;
+}
+
+.dropdown-item:active{
+    background: #DFDFDF;
+    color: black;
+}*/
+
+
+    /*Diseño de contenedores*/
+
+    #content {
+        width: 100%;
+        padding: 20px 5px 0 5px;
+        min-height: 100vh;
+        transition: all 0.3s;
+    }
+
+    .contenido-lista{
+        padding: 20px;
+        border: 1px solid #EEE;
+        border-radius: 0;
+        margin-bottom: 40px;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    }
+    .contenido{
+        padding: 10px;
+        border: 1px solid rgba(255, 160, 0, 0.5);
+        border-radius: 10px;
+        margin-bottom: 40px;
+        box-shadow: 1px 1px 3px rgba(255, 160, 0, 0.8);
+        text-align: center;
+        width: 80%;
+        margin-left: 10%;
+        align-content: center;
+        align-items: center;
+    }
+    .grid{
+        width: 80%;
+        margin-left: 10%;
+    }
+    .input{
+        width: 60%;
+        margin-right: 40%;
+    }
+    
+    .label{
+        width: 95%;
+        margin-right: 5%;
+        text-align: right;
+    }
+    
+    .container-create{
+        width: 95%;
+        margin-right: 5%;
+    }
+/*Sidebar*/
+
+ .navbarSh {            /*Algunos ajustes de barra para celulares*/
+        padding: 15px 10px;
+        background: #fff;
+        border: none;
+        border-radius: 0;
+        margin-bottom: 40px;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar-btn {
+        box-shadow: none;
+        outline: none !important;
+        border: none;
+    }
+
+    #sidebar {      /*Ancho, largo,color y transicion de barra lateral*/
+        min-width: 280px;
+        max-width: 280px;
+        background: #ffc107 ;
+        min-height: 100vh;
+        transition: all 0.3s;
+    }
+
+    #sidebar.active .header h4,#sidebar.active .CTAs {
+        display: none;
+    }
+
+    #sidebar.active .header strong {
+        display: block;
+        padding: 0;
+    }
+
+    #sidebar ul li a {          /*Color y alineacion de elementos de barra lateral*/
+        text-align: left;
+        margin-left: 5%;
+        color: black;
+    }
+
+    #sidebar.active ul li a {
+        padding: 20px 10px 0px;
+        text-align: center;
+        font-size: 0.85em;
+    }
+
+    #sidebar.active ul li a i {
+        margin-right: 0;
+        display: block;
+        font-size: 1.8em;
+        margin-bottom: 5px;
+    }
+
+    #sidebar.active .dropdown-toggle::after {
+        top: auto;
+        bottom: 10px;
+        right: 50%;
+        -webkit-transform: translateX(50%);
+        -ms-transform: translateX(50%);
+        transform: translateX(50%);
+    }
+
+    #sidebar .header {          /*Color y espaciado de titulo de barra lateral*/
+        padding: 20px;
+        background: #ffa000;
+    }
+
+
+     #sidebar .header strong {
+        display: none;
+        font-size: 1.8em;
+    }
+
+    #sidebar ul.components {
+        padding: 20px 0;
+    }
+
+    #sidebar ul li a {
+        padding: 10px;
+        font-size: 1.1em;
+        display: block;
+    }
+
+    #sidebar ul li a:hover {        /*Color de enlaces de barra lateral*/
+        color: #fff;
+        background: #ffb300 ;
+    }
+
+    #sidebar ul li a i {
+        margin-right: 15px;
+    }
+
+    a[data-toggle="collapse"] {
+        position: relative;
+    }
+
+     .header{                   /*Diseño de titulo de barra lateral*/
+        color: black;
+        font-weight: 700;
+        padding: 1em;
+    }
+
+    /*Diseño del pie de barra lateral*/
+    .footer{            
+    	min-width: 280px;
+        max-width: 280px;
+    	position: absolute;
+  		bottom: 0;      
+    }
+
+    .footer h6{
+    	text-align: center;
+    	font-size: 10px;
+    }
+
+    #sidebar.active .footer{
+    	min-width: 90px;
+        max-width: 90px;
+    	position: absolute;
+  		bottom: 0; 
+    }
